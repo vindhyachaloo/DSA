@@ -10,9 +10,9 @@ class Solution {
             skillSum += s;
         }
         
-        //if (skillSum % (n / 2) != 0) {
-           // return -1; // Total skill points cannot be divided evenly
-        //}
+        if (skillSum % (n / 2) != 0) {
+            return -1; // Total skill points cannot be divided evenly
+        }
         
         Arrays.sort(skill);
           long chemistry = 0;
